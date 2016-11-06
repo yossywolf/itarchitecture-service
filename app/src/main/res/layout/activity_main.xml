@@ -11,8 +11,9 @@
     tools:context="com.example.g2115030.itarchitectureservice.MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:id="@+id/textView"
         android:text="Hello AIDL Service World!"
         android:layout_alignParentEnd="true"
         android:layout_alignParentStart="true"
@@ -22,7 +23,7 @@
 
     <TextView
         android:text="Status: unknown"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/statusText"
         android:layout_marginTop="70dp"
@@ -34,11 +35,33 @@
 
     <Button
         android:text="Button"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="17dp"
         android:id="@+id/serviceManageButton"
         android:layout_below="@+id/statusText"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="Update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/updateButton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/batteryText"
+        android:textAlignment="gravity"
+        android:gravity="top|left"
+        android:maxLines="20"
+        android:layout_marginBottom="24dp"
+        android:layout_above="@+id/updateButton"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true" />
 </RelativeLayout>
